@@ -1,0 +1,54 @@
+:root {
+  font-size: 62.5%; /* reset default fontsize to 10px */
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.6rem; /* equivalent to 16px */
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Apply border-box to all elements */
+}
+
+img {
+  border: 0; /* =< IE10 gets a blue border on images that are links */
+  max-width: 100%;
+  vertical-align: middle; /* remove the space below images */
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit; /* apply body font declarations to system elements */
+}
+
+*:focus {
+  outline: 5px auto rgba(0, 103, 244, 0.247); /* align focus styles across browsers */
+}
+
+.visually-hidden {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  padding: 0;
+}
+
+/* Remove animations, transitions for users who have turned them off in their OS */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
