@@ -26,7 +26,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit; /* apply body font declarations to system elements */
+  font-family: inherit; /* apply body font family to "system" elements */
 }
 
 *:focus {
