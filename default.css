@@ -10,10 +10,11 @@ body {
   line-height: 1.5;
 }
 
+/* Apply border-box to all elements */
 *,
 *::before,
 *::after {
-  box-sizing: border-box; /* Apply border-box to all elements */
+  box-sizing: border-box;
 }
 
 img {
@@ -22,6 +23,7 @@ img {
   vertical-align: middle; /* remove the space below images */
 }
 
+/* make sure that form elements use the right font family */
 input,
 button,
 textarea,
@@ -29,8 +31,15 @@ select {
   font-family: inherit; /* apply body font family to "system" elements */
 }
 
+/* align focus styles across browsers */
 *:focus {
-  outline: 5px auto rgba(0, 103, 244, 0.247); /* align focus styles across browsers */
+  outline: 5px solid rgba(0, 103, 244, 0.247); /* Fallback for Safari which doesn't understand the auto keyword */
+  outline: 5px auto rgba(0, 103, 244, 0.247);
+}
+
+/* remove inner border on buttons in FF when focused */
+*::-moz-focus-inner {
+  border-style: none;
 }
 
 .visually-hidden {
