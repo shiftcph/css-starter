@@ -31,12 +31,6 @@ select {
   font-family: inherit; /* apply body font family to "system" elements */
 }
 
-/* align focus styles across browsers */
-*:focus {
-  outline: 5px solid rgba(0, 103, 244, 0.247); /* Fallback for Safari which doesn't understand the auto keyword */
-  outline: 5px auto rgba(0, 103, 244, 0.247);
-}
-
 /* remove inner border on buttons in FF when focused */
 *::-moz-focus-inner {
   border-style: none;
