@@ -52,6 +52,11 @@ select {
   padding: 0;
 }
 
+/* Make sure there is enough spacing beween paragraphs (WCAG AA 1.4.12) */
+p + p {
+  margin-top: 2em;
+}
+
 /* Remove animations, transitions for users who have turned them off in their OS */
 @media (prefers-reduced-motion: reduce) {
   * {
